@@ -34,6 +34,7 @@ fi
 
 if [ "x$NEW_LOCATION" != "x" -a "x$NEW_LOCATION" != "x$CURRENT_LOCATION" ]; then
     echo "Changing to $NEW_LOCATION"
+    osascript -e "display notification \"Changing Location to $NEW_LOCATION \" with title \"Location Changer\" subtitle \"$0\" "
     scselect "$NEW_LOCATION"
 fi
 
