@@ -10,11 +10,13 @@ Simplified location changer based on http://tech.inhelsinki.nl/locationchanger/
 Note: location name should be the same as the name of SSID
 
 Single User
+
     sudo cp locationchanger /usr/local/bin
     cp LocationChanger.plist ~/Library/LaunchAgents/
     sudo launchctl load ~/Library/LaunchAgents/LocationChanger.plist
 
 Multi user system
+
     sudo cp locationchanger /usr/local/bin
     sudo cp LocationChanger.plist /Library/LaunchAgents/
     sudo launchctl load /Library/LaunchAgents/LocationChanger.plist
